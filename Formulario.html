@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - Voluntariado</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        form { width: 50%; margin: auto; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h2>Formulario de Inscripción - Voluntariado</h2>
+    <form id="volunteerForm">
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" required>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required>
+
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" readonly>
+
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select id="nacionalidad">
+            <option value="">Seleccione...</option>
+            <option value="AF">AFGANISTAN</option>
+            <option value="AL">ALBANIA</option>
+            <option value="DE">ALEMANIA</option>
+            <option value="AO">ANGOLA</option>
+            <option value="AN">ANTILLAS HOLAND</option>
+            <option value="SA">ARABIA SAUDITA</option>
+            <option value="DZ">ARGELIA</option>
+            <option value="AR">ARGENTINA</option>
+            <option value="AM">ARMENIA</option>
+            <option value="AU">AUSTRALIA</option>
+            <option value="AT">AUSTRIA</option>
+            <option value="BS">BAHAMAS</option>
+            <option value="BB">BARBADOS</option>
+            <option value="BE">BELGICA</option>
+            <option value="BZ">BELICE</option>
+            <option value="BJ">BENIN</option>
+            <option value="BM">BERMUDAS</option>
+            <option value="BO">BOLIVIA</option>
+            <option value="BA">BOSNIA</option>
+            <option value="BR">BRASIL</option>
+            <option value="BG">BULGARIA</option>
+            <option value="CV">CABO VERDE</option>
+            <option value="CM">CAMERUN</option>
+            <option value="CA">CANADA</option>
+            <option value="TD">CHAD</option>
+            <option value="CL">CHILE</option>
+            <option value="CN">CHINA</option>
+            <option value="CY">CHIPRE</option>
+            <option value="CO">COLOMBIA</option>
+            <option value="CG">CONGO</option>
+            <option value="CI">COSTA DE MARFIL</option>
+            <option value="CR">COSTA RICA</option>
+            <option value="HR">CROACIA</option>
+            <option value="CU">CUBA</option>
+            <option value="CX">CURAZAO</option>
+            <option value="DK">DINAMARCA</option>
+            <option value="DM">DOMINICA</option>
+            <option value="EC">ECUADOR</option>
+            <option value="EG">EGIPTO</option>
+            <option value="SV">EL SALVADOR</option>
+            <option value="AE">EMIRATOS ARABES</option>
+            <option value="SK">ESLOVAKIA</option>
+            <option value="SI">ESLOVENIA</option>
+            <option value="ES">ESPAÑA</option>
+            <option value="US">ESTADOS UNIDOS</option>
+            <option value="EE">ESTONIA</option>
+            <option value="PH">FILIPINAS</option>
+            <option value="FI">FINLANDIA</option>
+            <option value="FR">FRANCIA</option>
+            <option value="GA">GABON</option>
+            <option value="GE">GEORGEA</option>
+            <option value="GH">GHANA</option>
+            <option value="GB">GRAN BRETAÑA</option>
+            <option value="GD">GRANADA</option>
+            <option value="GR">GRECIA</option>
+            <option value="GT">GUATEMALA</option>
+            <option value="GG">GUERNSEY</option>
+            <option value="GY">GUYANA</option>
+            <option value="HT">HAITI</option>
+            <option value="NL">HOLANDA</option>
+            <option value="HN">HONDURAS</option>
+            <option value="HK">HONG KONG</option>
+            <option value="HU">HUNGRIA</option>
+            <option value="IN">INDIA</option>
+            <option value="ID">INDONESIA</option>
+            <option value="IG">INGLATERRA</option>
+            <option value="IR">IRAN</option>
+            <option value="IQ">IRAQ</option>
+            <option value="IE">IRLANDA</option>
+            <option value="IM">ISLA DE MAN</option>
+            <option value="IS">ISLANDIA</option>
+            <option value="KY">ISLAS CAIMAN</option>
+            <option value="MH">ISLAS MARSHALL</option>
+            <option value="VI">ISLAS VIRGENES (U.S)</option>
+            <option value="VG">ISLAS VIRGENES BRITANICAS</option>
+            <option value="IL">ISRAEL</option>
+            <option value="IT">ITALIA</option>
+            <option value="JM">JAMAICA</option>
+            <option value="JP">JAPON</option>
+            <option value="JE">JERSEY</option>
+            <option value="JO">JORDANIA</option>
+            <option value="KZ">KAZAJISTAN</option>
+            <option value="KE">KENYA</option>
+            <option value="KW">KUWAIT</option>
+            <option value="LB">LIBANO</option>
+            <option value="LR">LIBERIA</option>
+            <option value="LU">LUXEMBURGO</option>
+            <option value="LI">Liechtenstein</option>
+            <option value="MY">MALASIA</option>
+            <option value="MT">MALTA</option>
+            <option value="MA">MARRUECOS</option>
+            <option value="MU">MAURICIO</option>
+            <option value="MR">MAURITANIA</option>
+            <option value="MX">MEXICO</option>
+            <option value="MC">MONACO</option>
+            <option value="MN">MONGOLIA</option>
+            <option value="ME">MONTENEGRO</option>
+            <option value="MZ">MOZAMBIQUE</option>
+            <option value="NA">NAMIBIA</option>
+            <option value="NP">NEPAL</option>
+            <option value="NI">NICARAGUA</option>
+            <option value="NG">NIGERIA</option>
+            <option value="NO">NORUEGA</option>
+            <option value="NZ">NUEVA ZELANDIA</option>
+            <option value="OM">OMAN</option>
+            <option value="PK">PAKISTAN</option>
+            <option value="PS">PALESTINA</option>
+            <option value="PA">PANAMA</option>
+            <option value="PY">PARAGUAY</option>
+            <option value="PE">PERU</option>
+            <option value="PL">POLONIA</option>
+            <option value="PT">PORTUGAL</option>
+            <option value="PR">PUERTO RICO</option>
+            <option value="QA">QATAR</option>
+            <option value="BH">REINO DE BAHREIN</option>
+            <option value="DO">REP DOMINICANA</option>
+            <option value="KR">REP. COREA</option>
+            <option value="KP">REP. DEM. COREA</option>
+            <option value="SY">REP.ARABE SIRIA</option>
+            <option value="CZ">REPUBLICA CHECA</option>
+            <option value="AZ">REPUBLICA DE AZERBAIYAN</option>
+            <option value="BY">REPUBLICA DE BELARUS</option>
+            <option value="UZ">REPUBLICA DE UZBEKISTAN</option>
+            <option value="RO">RUMANIA</option>
+            <option value="RU">RUSIA</option>
+            <option value="AS">SAMOA AMERICANA</option>
+            <option value="SM">SAN MARINO</option>
+            <option value="SN">SENEGAL</option>
+            <option value="RS">SERBIA</option>
+            <option value="SL">SIERRA LEONE</option>
+            <option value="SG">SINGAPUR</option>
+            <option value="SO">SOMALIA</option>
+            <option value="LK">SRI LANKA</option>
+            <option value="ZA">SUD AFRICA</option>
+            <option value="SD">SUDAN</option>
+            <option value="SE">SUECIA</option>
+            <option value="CH">SUIZA</option>
+            <option value="SR">SURINAM</option>
+            <option value="TH">TAILANDIA</option>
+            <option value="TW">TAIWAN</option>
+            <option value="TJ">TAYIKISTAN</option>
+            <option value="TG">TOGO</option>
+            <option value="TT">TRINIDAD TOBAGO</option>
+            <option value="TR">TURQUIA</option>
+            <option value="UA">UCRANIA</option>
+            <option value="UY">URUGUAY</option>
+            <option value="VE">VENEZUELA</option>
+            <option value="VN">VIETNAM</option>
+            <option value="ZR">ZAIRE</option>
+            <option value="ZM">ZAMBIA</option>
+        </select>
+
+        <label for="residencia">País de residencia:</label>
+        <select id="residencia">
+            <option value="">Seleccione...</option>
+            <option value="AF">AFGANISTAN</option>
+            <option value="AL">ALBANIA</option>
+            <option value="DE">ALEMANIA</option>
+            <option value="AO">ANGOLA</option>
+            <option value="AN">ANTILLAS HOLAND</option>
+            <option value="SA">ARABIA SAUDITA</option>
+            <option value="DZ">ARGELIA</option>
+            <option value="AR">ARGENTINA</option>
+            <option value="AM">ARMENIA</option>
+            <option value="AU">AUSTRALIA</option>
+            <option value="AT">AUSTRIA</option>
+            <option value="BS">BAHAMAS</option>
+            <option value="BB">BARBADOS</option>
+            <option value="BE">BELGICA</option>
+            <option value="BZ">BELICE</option>
+            <option value="BJ">BENIN</option>
+            <option value="BM">BERMUDAS</option>
+            <option value="BO">BOLIVIA</option>
+            <option value="BA">BOSNIA</option>
+            <option value="BR">BRASIL</option>
+            <option value="BG">BULGARIA</option>
+            <option value="CV">CABO VERDE</option>
+            <option value="CM">CAMERUN</option>
+            <option value="CA">CANADA</option>
+            <option value="TD">CHAD</option>
+            <option value="CL">CHILE</option>
+            <option value="CN">CHINA</option>
+            <option value="CY">CHIPRE</option>
+            <option value="CO">COLOMBIA</option>
+            <option value="CG">CONGO</option>
+            <option value="CI">COSTA DE MARFIL</option>
+            <option value="CR">COSTA RICA</option>
+            <option value="HR">CROACIA</option>
+            <option value="CU">CUBA</option>
+            <option value="CX">CURAZAO</option>
+            <option value="DK">DINAMARCA</option>
+            <option value="DM">DOMINICA</option>
+            <option value="EC">ECUADOR</option>
+            <option value="EG">EGIPTO</option>
+            <option value="SV">EL SALVADOR</option>
+            <option value="AE">EMIRATOS ARABES</option>
+            <option value="SK">ESLOVAKIA</option>
+            <option value="SI">ESLOVENIA</option>
+            <option value="ES">ESPAÑA</option>
+            <option value="US">ESTADOS UNIDOS</option>
+            <option value="EE">ESTONIA</option>
+            <option value="PH">FILIPINAS</option>
+            <option value="FI">FINLANDIA</option>
+            <option value="FR">FRANCIA</option>
+            <option value="GA">GABON</option>
+            <option value="GE">GEORGEA</option>
+            <option value="GH">GHANA</option>
+            <option value="GB">GRAN BRETAÑA</option>
+            <option value="GD">GRANADA</option>
+            <option value="GR">GRECIA</option>
+            <option value="GT">GUATEMALA</option>
+            <option value="GG">GUERNSEY</option>
+            <option value="GY">GUYANA</option>
+            <option value="HT">HAITI</option>
+            <option value="NL">HOLANDA</option>
+            <option value="HN">HONDURAS</option>
+            <option value="HK">HONG KONG</option>
+            <option value="HU">HUNGRIA</option>
+            <option value="IN">INDIA</option>
+            <option value="ID">INDONESIA</option>
+            <option value="IG">INGLATERRA</option>
+            <option value="IR">IRAN</option>
+            <option value="IQ">IRAQ</option>
+            <option value="IE">IRLANDA</option>
+            <option value="IM">ISLA DE MAN</option>
+            <option value="IS">ISLANDIA</option>
+            <option value="KY">ISLAS CAIMAN</option>
+            <option value="MH">ISLAS MARSHALL</option>
+            <option value="VI">ISLAS VIRGENES (U.S)</option>
+            <option value="VG">ISLAS VIRGENES BRITANICAS</option>
+            <option value="IL">ISRAEL</option>
+            <option value="IT">ITALIA</option>
+            <option value="JM">JAMAICA</option>
+            <option value="JP">JAPON</option>
+            <option value="JE">JERSEY</option>
+            <option value="JO">JORDANIA</option>
+            <option value="KZ">KAZAJISTAN</option>
+            <option value="KE">KENYA</option>
+            <option value="KW">KUWAIT</option>
+            <option value="LB">LIBANO</option>
+            <option value="LR">LIBERIA</option>
+            <option value="LU">LUXEMBURGO</option>
+            <option value="LI">Liechtenstein</option>
+            <option value="MY">MALASIA</option>
+            <option value="MT">MALTA</option>
+            <option value="MA">MARRUECOS</option>
+            <option value="MU">MAURICIO</option>
+            <option value="MR">MAURITANIA</option>
+            <option value="MX">MEXICO</option>
+            <option value="MC">MONACO</option>
+            <option value="MN">MONGOLIA</option>
+            <option value="ME">MONTENEGRO</option>
+            <option value="MZ">MOZAMBIQUE</option>
+            <option value="NA">NAMIBIA</option>
+            <option value="NP">NEPAL</option>
+            <option value="NI">NICARAGUA</option>
+            <option value="NG">NIGERIA</option>
+            <option value="NO">NORUEGA</option>
+            <option value="NZ">NUEVA ZELANDIA</option>
+            <option value="OM">OMAN</option>
+            <option value="PK">PAKISTAN</option>
+            <option value="PS">PALESTINA</option>
+            <option value="PA">PANAMA</option>
+            <option value="PY">PARAGUAY</option>
+            <option value="PE">PERU</option>
+            <option value="PL">POLONIA</option>
+            <option value="PT">PORTUGAL</option>
+            <option value="PR">PUERTO RICO</option>
+            <option value="QA">QATAR</option>
+            <option value="BH">REINO DE BAHREIN</option>
+            <option value="DO">REP DOMINICANA</option>
+            <option value="KR">REP. COREA</option>
+            <option value="KP">REP. DEM. COREA</option>
+            <option value="SY">REP.ARABE SIRIA</option>
+            <option value="CZ">REPUBLICA CHECA</option>
+            <option value="AZ">REPUBLICA DE AZERBAIYAN</option>
+            <option value="BY">REPUBLICA DE BELARUS</option>
+            <option value="UZ">REPUBLICA DE UZBEKISTAN</option>
+            <option value="RO">RUMANIA</option>
+            <option value="RU">RUSIA</option>
+            <option value="AS">SAMOA AMERICANA</option>
+            <option value="SM">SAN MARINO</option>
+            <option value="SN">SENEGAL</option>
+            <option value="RS">SERBIA</option>
+            <option value="SL">SIERRA LEONE</option>
+            <option value="SG">SINGAPUR</option>
+            <option value="SO">SOMALIA</option>
+            <option value="LK">SRI LANKA</option>
+            <option value="ZA">SUD AFRICA</option>
+            <option value="SD">SUDAN</option>
+            <option value="SE">SUECIA</option>
+            <option value="CH">SUIZA</option>
+            <option value="SR">SURINAM</option>
+            <option value="TH">TAILANDIA</option>
+            <option value="TW">TAIWAN</option>
+            <option value="TJ">TAYIKISTAN</option>
+            <option value="TG">TOGO</option>
+            <option value="TT">TRINIDAD TOBAGO</option>
+            <option value="TR">TURQUIA</option>
+            <option value="UA">UCRANIA</option>
+            <option value="UY">URUGUAY</option>
+            <option value="VE">VENEZUELA</option>
+            <option value="VN">VIETNAM</option>
+            <option value="ZR">ZAIRE</option>
+            <option value="ZM">ZAMBIA</option>
+        </select>
+
+        <label for="region" class="hidden">Región:</label>
+        <select id="region" class="hidden" required>
+            <option value="">Seleccione...</option>
+            <option value="01">Región de Tarapacá</option>
+            <option value="02">Región de Antofagasta</option>
+            <option value="03">Región de Atacama</option>
+            <option value="04">Región de Coquimbo</option>
+            <option value="05">Región de Valparaíso</option>
+            <option value="06">Región de Libertador General Bernardo O'Higgins</option>
+            <option value="07">Región Del Maule</option>
+            <option value="08">Región de Biobío</option>
+            <option value="09">Región de La Araucanía</option>
+            <option value="10">Región de Los Lagos</option>
+            <option value="11">Región de Aysén del General Carlos Ibáñez del Campo</option>
+            <option value="12">Región de Magallanes y de la Antártica Chilena</option>
+            <option value="13">Región Metropolitana de Santiago</option>
+            <option value="14">Región de Los Ríos</option>
+            <option value="15">Región de Arica y Parinacota</option>
+            <option value="16">Región de Ñuble</option>
+        </select>
+
+        <label for="comuna" class="hidden">Comuna:</label>
+        <select id="comuna" class="hidden" required>
+            <option value="">Seleccione...</option>
+        </select>
+
+        <label for="tipoDocumento">Tipo de Documento de Identificación:</label>
+        <select id="tipoDocumento" required>
+            <option value="">Seleccione...</option>
+            <option value="RUT">RUT (Cédula de identidad Chilena)</option>
+            <option value="Pasaporte">Pasaporte</option>
+        </select>
+
+        <label for="numeroDocumento">Número de Documento:</label>
+        <input type="text" id="numeroDocumento" required>
+
+        <label for="genero">Género:</label>
+        <select id="genero">
+            <option value="">Seleccione...</option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option value="NB">No Binario</option>
+            <option value="N/A">Prefiero no decirlo</option>
+        </select>
+
+        <label for="idiomanativo">Idioma nativo:</label>
+        <select id="idiomanativo">
+            <option value="">Seleccione...</option>
+            <option value="Abjasio">Abjasio</option>
+            <option value="Afrikaans">Afrikaans</option>
+            <option value="Albanés">Albanés</option>
+            <option value="Alemán">Alemán</option>
+            <option value="Amárico">Amárico</option>
+            <option value="Antiguo eslavo eclesiástico">Antiguo eslavo eclesiástico</option>
+            <option value="Árabe">Árabe</option>
+            <option value="Aragonés">Aragonés</option>
+            <option value="Armenio">Armenio</option>
+            <option value="Asamés">Asamés</option>
+            <option value="Avaricio">Avaricio</option>
+            <option value="Avestan">Avestan</option>
+            <option value="Aymara">Aymara</option>
+            <option value="Azerbaiyano">Azerbaiyano</option>
+            <option value="Bambara">Bambara</option>
+            <option value="Baskir">Baskir</option>
+            <option value="Bengalí">Bengalí</option>
+            <option value="Bielorruso">Bielorruso</option>
+            <option value="Birmano">Birmano</option>
+            <option value="Bislama">Bislama</option>
+            <option value="Bosnio">Bosnio</option>
+            <option value="Bretón">Bretón</option>
+            <option value="Búlgaro">Búlgaro</option>
+            <option value="Cachemir">Cachemir</option>
+            <option value="Catalán">Catalán</option>
+            <option value="Chamorro">Chamorro</option>
+            <option value="Checheno">Checheno</option>
+            <option value="Checo">Checo</option>
+            <option value="Chichewa">Chichewa</option>
+            <option value="Chino">Chino</option>
+            <option value="Chuvasio">Chuvasio</option>
+            <option value="Cingalés">Cingalés</option>
+            <option value="Congo">Congo</option>
+            <option value="Coreano">Coreano</option>
+            <option value="Córnico">Córnico</option>
+            <option value="Corso">Corso</option>
+            <option value="Cree">Cree</option>
+            <option value="Croata">Croata</option>
+            <option value="Danés">Danés</option>
+            <option value="Divehi">Divehi</option>
+            <option value="Doble">Doble</option>
+            <option value="Dzongkha">Dzongkha</option>
+            <option value="Eslovaco">Eslovaco</option>
+            <option value="Esloveno">Esloveno</option>
+            <option value="Español">Español</option>
+            <option value="Esperanto">Esperanto</option>
+            <option value="Estonio">Estonio</option>
+            <option value="Feo">Feo</option>
+            <option value="Feroés">Feroés</option>
+            <option value="Finlandés">Finlandés</option>
+            <option value="Fiyiano">Fiyiano</option>
+            <option value="Francés">Francés</option>
+            <option value="Frisón occidental">Frisón occidental</option>
+            <option value="Gaélico escocés">Gaélico escocés</option>
+            <option value="Galés">Galés</option>
+            <option value="Gallego">Gallego</option>
+            <option value="Georgiano">Georgiano</option>
+            <option value="Griego">Griego</option>
+            <option value="Groenlandés">Groenlandés</option>
+            <option value="Guaraní">Guaraní</option>
+            <option value="Gujarati">Gujarati</option>
+            <option value="Haitiano">Haitiano</option>
+            <option value="Hausa">Hausa</option>
+            <option value="Hebreo">Hebreo</option>
+            <option value="Herero">Herero</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Hiri Motu">Hiri Motu</option>
+            <option value="Holandés">Holandés</option>
+            <option value="Húngaro">Húngaro</option>
+            <option value="Ido">Ido</option>
+            <option value="Igbo">Igbo</option>
+            <option value="Indonesio">Indonesio</option>
+            <option value="Inglés">Inglés</option>
+            <option value="Interlingua">Interlingua</option>
+            <option value="Interlingue">Interlingue</option>
+            <option value="Inuktitut">Inuktitut</option>
+            <option value="Inupiaq">Inupiaq</option>
+            <option value="Irlandés">Irlandés</option>
+            <option value="Islandés">Islandés</option>
+            <option value="Italiano">Italiano</option>
+            <option value="Japonés">Japonés</option>
+            <option value="Javanés">Javanés</option>
+            <option value="Jemer">Jemer</option>
+            <option value="Kannada">Kannada</option>
+            <option value="Kanuri">Kanuri</option>
+            <option value="Kazajo">Kazajo</option>
+            <option value="Kikuyu">Kikuyu</option>
+            <option value="Kinyarwanda">Kinyarwanda</option>
+            <option value="Kirguizo">Kirguizo</option>
+            <option value="Kirundi">Kirundi</option>
+            <option value="Kurdo">Kurdo</option>
+            <option value="Kwanyama">Kwanyama</option>
+            <option value="Latín">Latín</option>
+            <option value="Lejos">Lejos</option>
+            <option value="Letón">Letón</option>
+            <option value="Limburgués">Limburgués</option>
+            <option value="Lingala">Lingala</option>
+            <option value="Lituano">Lituano</option>
+            <option value="Luba-Katanga">Luba-Katanga</option>
+            <option value="Luxemburgués">Luxemburgués</option>
+            <option value="Macedonio">Macedonio</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="Malayo">Malayo</option>
+            <option value="Malgache">Malgache</option>
+            <option value="Maltés">Maltés</option>
+            <option value="Manés">Manés</option>
+            <option value="Maoríes">Maoríes</option>
+            <option value="Marathi">Marathi</option>
+            <option value="Marshalés">Marshalés</option>
+            <option value="Mongol">Mongol</option>
+            <option value="Nauru">Nauru</option>
+            <option value="Navajo">Navajo</option>
+            <option value="Ndebele del Norte">Ndebele del Norte</option>
+            <option value="Ndebele del Sur">Ndebele del Sur</option>
+            <option value="Ndonga">Ndonga</option>
+            <option value="Nepalí">Nepalí</option>
+            <option value="Noruego">Noruego</option>
+            <option value="Noruego Nynorsk">Noruego Nynorsk</option>
+            <option value="Nuosu">Nuosu</option>
+            <option value="Occitano">Occitano</option>
+            <option value="Ojibwa">Ojibwa</option>
+            <option value="Oriya">Oriya</option>
+            <option value="Oromo">Oromo</option>
+            <option value="Osetio">Osetio</option>
+            <option value="Oveja">Oveja</option>
+            <option value="Pāli">Pāli</option>
+            <option value="Panyabí">Panyabí</option>
+            <option value="Pashto">Pashto</option>
+            <option value="Persa">Persa</option>
+            <option value="Polaco">Polaco</option>
+            <option value="Portugués">Portugués</option>
+            <option value="Quechua">Quechua</option>
+            <option value="Romanche">Romanche</option>
+            <option value="Rumano">Rumano</option>
+            <option value="Ruso">Ruso</option>
+            <option value="Sami del Norte">Sami del Norte</option>
+            <option value="Samoano">Samoano</option>
+            <option value="Sango">Sango</option>
+            <option value="Sánscrito">Sánscrito</option>
+            <option value="Sardo">Sardo</option>
+            <option value="Será">Será</option>
+            <option value="Serbio">Serbio</option>
+            <option value="Sesotho">Sesotho</option>
+            <option value="Setswana">Setswana</option>
+            <option value="Shona">Shona</option>
+            <option value="Sindhi">Sindhi</option>
+            <option value="Somalí">Somalí</option>
+            <option value="Sueco">Sueco</option>
+            <option value="Sundanés">Sundanés</option>
+            <option value="Swahili">Swahili</option>
+            <option value="Swati">Swati</option>
+            <option value="Tagalo">Tagalo</option>
+            <option value="Tahitiano">Tahitiano</option>
+            <option value="Tailandés">Tailandés</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Tártaro">Tártaro</option>
+            <option value="Tayiko">Tayiko</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Tibetano">Tibetano</option>
+            <option value="Tigriña">Tigriña</option>
+            <option value="Tonga">Tonga</option>
+            <option value="Tsonga">Tsonga</option>
+            <option value="Tuberculosis">Tuberculosis</option>
+            <option value="Turco">Turco</option>
+            <option value="Turcomano">Turcomano</option>
+            <option value="Twi">Twi</option>
+            <option value="Ucraniano">Ucraniano</option>
+            <option value="Uigur">Uigur</option>
+            <option value="Urdu">Urdu</option>
+            <option value="Uzbek">Uzbek</option>
+            <option value="Valón">Valón</option>
+            <option value="Vasco">Vasco</option>
+            <option value="Venirse">Venirse</option>
+            <option value="Venta">Venta</option>
+            <option value="Vietnamita">Vietnamita</option>
+            <option value="Volapük">Volapük</option>
+            <option value="Wolof">Wolof</option>
+            <option value="Xosa">Xosa</option>
+            <option value="Yiddish">Yiddish</option>
+            <option value="Yoruba">Yoruba</option>
+            <option value="Zhuang">Zhuang</option>
+            <option value="Zulú">Zulú</option>
+        </select>
+
+        <label for="segundoidioma">Segundo idioma:</label>
+        <select id="segundoidioma">
+            <option value="">Seleccione...</option>
+            <option value="Abjasio">Abjasio</option>
+            <option value="Afrikaans">Afrikaans</option>
+            <option value="Albanés">Albanés</option>
+            <option value="Alemán">Alemán</option>
+            <option value="Amárico">Amárico</option>
+            <option value="Antiguo eslavo eclesiástico">Antiguo eslavo eclesiástico</option>
+            <option value="Árabe">Árabe</option>
+            <option value="Aragonés">Aragonés</option>
+            <option value="Armenio">Armenio</option>
+            <option value="Asamés">Asamés</option>
+            <option value="Avaricio">Avaricio</option>
+            <option value="Avestan">Avestan</option>
+            <option value="Aymara">Aymara</option>
+            <option value="Azerbaiyano">Azerbaiyano</option>
+            <option value="Bambara">Bambara</option>
+            <option value="Baskir">Baskir</option>
+            <option value="Bengalí">Bengalí</option>
+            <option value="Bielorruso">Bielorruso</option>
+            <option value="Birmano">Birmano</option>
+            <option value="Bislama">Bislama</option>
+            <option value="Bosnio">Bosnio</option>
+            <option value="Bretón">Bretón</option>
+            <option value="Búlgaro">Búlgaro</option>
+            <option value="Cachemir">Cachemir</option>
+            <option value="Catalán">Catalán</option>
+            <option value="Chamorro">Chamorro</option>
+            <option value="Checheno">Checheno</option>
+            <option value="Checo">Checo</option>
+            <option value="Chichewa">Chichewa</option>
+            <option value="Chino">Chino</option>
+            <option value="Chuvasio">Chuvasio</option>
+            <option value="Cingalés">Cingalés</option>
+            <option value="Congo">Congo</option>
+            <option value="Coreano">Coreano</option>
+            <option value="Córnico">Córnico</option>
+            <option value="Corso">Corso</option>
+            <option value="Cree">Cree</option>
+            <option value="Croata">Croata</option>
+            <option value="Danés">Danés</option>
+            <option value="Divehi">Divehi</option>
+            <option value="Doble">Doble</option>
+            <option value="Dzongkha">Dzongkha</option>
+            <option value="Eslovaco">Eslovaco</option>
+            <option value="Esloveno">Esloveno</option>
+            <option value="Español">Español</option>
+            <option value="Esperanto">Esperanto</option>
+            <option value="Estonio">Estonio</option>
+            <option value="Feo">Feo</option>
+            <option value="Feroés">Feroés</option>
+            <option value="Finlandés">Finlandés</option>
+            <option value="Fiyiano">Fiyiano</option>
+            <option value="Francés">Francés</option>
+            <option value="Frisón occidental">Frisón occidental</option>
+            <option value="Gaélico escocés">Gaélico escocés</option>
+            <option value="Galés">Galés</option>
+            <option value="Gallego">Gallego</option>
+            <option value="Georgiano">Georgiano</option>
+            <option value="Griego">Griego</option>
+            <option value="Groenlandés">Groenlandés</option>
+            <option value="Guaraní">Guaraní</option>
+            <option value="Gujarati">Gujarati</option>
+            <option value="Haitiano">Haitiano</option>
+            <option value="Hausa">Hausa</option>
+            <option value="Hebreo">Hebreo</option>
+            <option value="Herero">Herero</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Hiri Motu">Hiri Motu</option>
+            <option value="Holandés">Holandés</option>
+            <option value="Húngaro">Húngaro</option>
+            <option value="Ido">Ido</option>
+            <option value="Igbo">Igbo</option>
+            <option value="Indonesio">Indonesio</option>
+            <option value="Inglés">Inglés</option>
+            <option value="Interlingua">Interlingua</option>
+            <option value="Interlingue">Interlingue</option>
+            <option value="Inuktitut">Inuktitut</option>
+            <option value="Inupiaq">Inupiaq</option>
+            <option value="Irlandés">Irlandés</option>
+            <option value="Islandés">Islandés</option>
+            <option value="Italiano">Italiano</option>
+            <option value="Japonés">Japonés</option>
+            <option value="Javanés">Javanés</option>
+            <option value="Jemer">Jemer</option>
+            <option value="Kannada">Kannada</option>
+            <option value="Kanuri">Kanuri</option>
+            <option value="Kazajo">Kazajo</option>
+            <option value="Kikuyu">Kikuyu</option>
+            <option value="Kinyarwanda">Kinyarwanda</option>
+            <option value="Kirguizo">Kirguizo</option>
+            <option value="Kirundi">Kirundi</option>
+            <option value="Kurdo">Kurdo</option>
+            <option value="Kwanyama">Kwanyama</option>
+            <option value="Latín">Latín</option>
+            <option value="Lejos">Lejos</option>
+            <option value="Letón">Letón</option>
+            <option value="Limburgués">Limburgués</option>
+            <option value="Lingala">Lingala</option>
+            <option value="Lituano">Lituano</option>
+            <option value="Luba-Katanga">Luba-Katanga</option>
+            <option value="Luxemburgués">Luxemburgués</option>
+            <option value="Macedonio">Macedonio</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="Malayo">Malayo</option>
+            <option value="Malgache">Malgache</option>
+            <option value="Maltés">Maltés</option>
+            <option value="Manés">Manés</option>
+            <option value="Maoríes">Maoríes</option>
+            <option value="Marathi">Marathi</option>
+            <option value="Marshalés">Marshalés</option>
+            <option value="Mongol">Mongol</option>
+            <option value="Nauru">Nauru</option>
+            <option value="Navajo">Navajo</option>
+            <option value="Ndebele del Norte">Ndebele del Norte</option>
+            <option value="Ndebele del Sur">Ndebele del Sur</option>
+            <option value="Ndonga">Ndonga</option>
+            <option value="Nepalí">Nepalí</option>
+            <option value="Noruego">Noruego</option>
+            <option value="Noruego Nynorsk">Noruego Nynorsk</option>
+            <option value="Nuosu">Nuosu</option>
+            <option value="Occitano">Occitano</option>
+            <option value="Ojibwa">Ojibwa</option>
+            <option value="Oriya">Oriya</option>
+            <option value="Oromo">Oromo</option>
+            <option value="Osetio">Osetio</option>
+            <option value="Oveja">Oveja</option>
+            <option value="Pāli">Pāli</option>
+            <option value="Panyabí">Panyabí</option>
+            <option value="Pashto">Pashto</option>
+            <option value="Persa">Persa</option>
+            <option value="Polaco">Polaco</option>
+            <option value="Portugués">Portugués</option>
+            <option value="Quechua">Quechua</option>
+            <option value="Romanche">Romanche</option>
+            <option value="Rumano">Rumano</option>
+            <option value="Ruso">Ruso</option>
+            <option value="Sami del Norte">Sami del Norte</option>
+            <option value="Samoano">Samoano</option>
+            <option value="Sango">Sango</option>
+            <option value="Sánscrito">Sánscrito</option>
+            <option value="Sardo">Sardo</option>
+            <option value="Será">Será</option>
+            <option value="Serbio">Serbio</option>
+            <option value="Sesotho">Sesotho</option>
+            <option value="Setswana">Setswana</option>
+            <option value="Shona">Shona</option>
+            <option value="Sindhi">Sindhi</option>
+            <option value="Somalí">Somalí</option>
+            <option value="Sueco">Sueco</option>
+            <option value="Sundanés">Sundanés</option>
+            <option value="Swahili">Swahili</option>
+            <option value="Swati">Swati</option>
+            <option value="Tagalo">Tagalo</option>
+            <option value="Tahitiano">Tahitiano</option>
+            <option value="Tailandés">Tailandés</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Tártaro">Tártaro</option>
+            <option value="Tayiko">Tayiko</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Tibetano">Tibetano</option>
+            <option value="Tigriña">Tigriña</option>
+            <option value="Tonga">Tonga</option>
+            <option value="Tsonga">Tsonga</option>
+            <option value="Tuberculosis">Tuberculosis</option>
+            <option value="Turco">Turco</option>
+            <option value="Turcomano">Turcomano</option>
+            <option value="Twi">Twi</option>
+            <option value="Ucraniano">Ucraniano</option>
+            <option value="Uigur">Uigur</option>
+            <option value="Urdu">Urdu</option>
+            <option value="Uzbek">Uzbek</option>
+            <option value="Valón">Valón</option>
+            <option value="Vasco">Vasco</option>
+            <option value="Venirse">Venirse</option>
+            <option value="Venta">Venta</option>
+            <option value="Vietnamita">Vietnamita</option>
+            <option value="Volapük">Volapük</option>
+            <option value="Wolof">Wolof</option>
+            <option value="Xosa">Xosa</option>
+            <option value="Yiddish">Yiddish</option>
+            <option value="Yoruba">Yoruba</option>
+            <option value="Zhuang">Zhuang</option>
+            <option value="Zulú">Zulú</option>
+        </select>
+
+        <label for="nivelsegundoidioma">Nivel segundo idioma:</label>
+        <select id="nivelsegundoidioma">
+            <option value="">Seleccione...</option>
+            <option value="Bi">Bilingüe</option>
+            <option value="Av">Avanzado</option>
+            <option value="In">Intermedio</option>
+            <option value="Ba">Basico</option>
+         </select>
+
+        <label for="polera">Talla de polera:</label>
+        <select id="polera">
+            <option value="">Seleccione...</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+         </select>
+
+        <label for="pantalon">Talla de pantalon:</label>
+        <select id="pantalon">
+            <option value="">Seleccione...</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+         </select>
+
+        <label for="experiencia">¿Tiene experiencia en voluntariado?</label>
+        <select id="experiencia">
+            <option value="">Seleccione...</option>
+            <option value="Si">Sí</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="discapacidad">¿Es usted una persona con discapacidad?</label>
+        <select id="discapacidad">
+            <option value="">Seleccione...</option>
+            <option value="Si">Sí</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="tipodiscapacidad" class="hidden">¿Qué tipo de discapacidad?</label>
+        <select id="tipodiscapacidad" class="hidden">
+            <option value="">Seleccione...</option>
+            <option value="cognitiva">Discapacidad cognitiva</option>
+            <option value="auditiva">Discapacidad auditiva</option>
+            <option value="física">Discapacidad física</option>
+            <option value="visual">Discapacidad visual</option>
+            <option value="N/A">No aplica</option>
+        </select>
+
+        <label for="nivelEstudio">Nivel de Estudio:</label>
+        <select id="nivelEstudio">
+            <option value="">Seleccione...</option>
+            <option value="Ed. Básica">Ed. Básica</option>
+            <option value="Ed. Media">Ed. Media</option>
+            <option value="Técnico profesional">Técnico profesional</option>
+            <option value="Técnico profesional incompleto">Técnico profesional incompleto</option>
+            <option value="Universitaria">Universitaria</option>
+            <option value="Universitaria Incompleto">Universitaria Incompleto</option>
+            <option value="Master/Doctorado">Master/Doctorado</option>
+        </select>
+
+        <label for="universidad" class="hidden">Universidad o Instituto Profesional:</label>
+        <select id="universidad" class="hidden">
+            <option value="">Seleccione...</option>
+            <option value="U. Academia de Humanismo Cristiano ">U. Academia de Humanismo Cristiano </option>
+            <option value=" U. Adolfo Ibáñez "> U. Adolfo Ibáñez </option>
+            <option value=" U. Adventista de Chile "> U. Adventista de Chile </option>
+            <option value=" U. Alberto Hurtado "> U. Alberto Hurtado </option>
+            <option value=" U. Andrés Bello "> U. Andrés Bello </option>
+            <option value=" U. Arturo Prat "> U. Arturo Prat </option>
+            <option value=" U. Austral de Chile "> U. Austral de Chile </option>
+            <option value=" U. Autónoma de Chile "> U. Autónoma de Chile </option>
+            <option value=" U. Bernardo O'Higgins "> U. Bernardo O'Higgins </option>
+            <option value=" U. Bolivariana "> U. Bolivariana </option>
+            <option value=" U. Católica de Chile "> U. Católica de Chile </option>
+            <option value=" U. Católica de la Santísima Concepción "> U. Católica de la Santísima Concepción </option>
+            <option value=" U. Católica de Temuco "> U. Católica de Temuco </option>
+            <option value=" U. Católica de Valparaíso "> U. Católica de Valparaíso </option>
+            <option value=" U. Católica del Maule "> U. Católica del Maule </option>
+            <option value=" U. Católica del Norte "> U. Católica del Norte </option>
+            <option value=" U. Católica Silva Henríquez "> U. Católica Silva Henríquez </option>
+            <option value=" U. Central de Chile "> U. Central de Chile </option>
+            <option value=" U. de Aconcagua "> U. de Aconcagua </option>
+            <option value=" U. de Antofagasta "> U. de Antofagasta </option>
+            <option value=" U. de Atacama "> U. de Atacama </option>
+            <option value=" U. de Chile "> U. de Chile </option>
+            <option value=" U. de Concepción "> U. de Concepción </option>
+            <option value=" U. de La Frontera "> U. de La Frontera </option>
+            <option value=" U. de La Serena "> U. de La Serena </option>
+            <option value=" U. de Las Américas "> U. de Las Américas </option>
+            <option value=" U. de los Andes "> U. de los Andes </option>
+            <option value=" U. de Los Lagos "> U. de Los Lagos </option>
+            <option value=" U. de Magallanes "> U. de Magallanes </option>
+            <option value=" U. de Playa Ancha "> U. de Playa Ancha </option>
+            <option value=" U. de Santiago de Chile "> U. de Santiago de Chile </option>
+            <option value=" U. de Talca "> U. de Talca </option>
+            <option value=" U. de Tarapacá de Arica "> U. de Tarapacá de Arica </option>
+            <option value=" U. de Valparaíso "> U. de Valparaíso </option>
+            <option value=" U. de Viña del Mar "> U. de Viña del Mar </option>
+            <option value=" U. del Alba "> U. del Alba </option>
+            <option value=" U. del Bío Bío "> U. del Bío Bío </option>
+            <option value=" U. del Desarrollo "> U. del Desarrollo </option>
+            <option value=" U. Diego Portales "> U. Diego Portales </option>
+            <option value=" U. Finis Terrae "> U. Finis Terrae </option>
+            <option value=" U. Gabriela Mistral "> U. Gabriela Mistral </option>
+            <option value=" U. SEK "> U. SEK </option>
+            <option value=" U. La República "> U. La República </option>
+            <option value=" U. Mayor "> U. Mayor </option>
+            <option value=" U. Metropolitana de Ciencias de la Educación "> U. Metropolitana de Ciencias de la Educación </option>
+            <option value=" U. Miguel de Cervantes "> U. Miguel de Cervantes </option>
+            <option value=" U. San Sebastián "> U. San Sebastián </option>
+            <option value=" U. Santo Tomás "> U. Santo Tomás </option>
+            <option value=" U. Técnica Federico Santa María "> U. Técnica Federico Santa María </option>
+            <option value=" U. Tecnológica Metropolitana "> U. Tecnológica Metropolitana </option>
+            <option value=" U. UNIACC "> U. UNIACC </option>
+            <option value=" AIEP "> AIEP </option>
+            <option value=" Alemán Wilhelm Von Humboldt "> Alemán Wilhelm Von Humboldt </option>
+            <option value=" Antares "> Antares </option>
+            <option value=" Arcos "> Arcos </option>
+            <option value=" Carlos Casanueva "> Carlos Casanueva </option>
+            <option value=" Cenafom "> Cenafom </option>
+            <option value=" Chileno Británico de Cultura "> Chileno Británico de Cultura </option>
+            <option value=" Ciisa "> Ciisa </option>
+            <option value=" Duoc UC "> Duoc UC </option>
+            <option value=" Eatri "> Eatri </option>
+            <option value=" ECAS "> ECAS </option>
+            <option value=" Escuela Moderna de Música "> Escuela Moderna de Música </option>
+            <option value=" Esucomex "> Esucomex </option>
+            <option value=" Guillermo Subercaseaux "> Guillermo Subercaseaux </option>
+            <option value=" Inacap "> Inacap </option>
+            <option value=" INAF "> INAF </option>
+            <option value=" Instituto Profesional de Chile "> Instituto Profesional de Chile </option>
+            <option value=" Instituto Profesional IPP "> Instituto Profesional IPP </option>
+            <option value=" Instituto Tecnológico UCSC "> Instituto Tecnológico UCSC </option>
+            <option value=" Iplacex "> Iplacex </option>
+            <option value=" Libertador de Los Andes "> Libertador de Los Andes </option>
+            <option value=" Los Leones "> Los Leones </option>
+            <option value=" Norteamericano "> Norteamericano </option>
+            <option value=" Projazz "> Projazz </option>
+            <option value=" Santo Tomás "> Santo Tomás </option>
+            <option value=" Sersoft "> Sersoft </option>
+            <option value=" Valle Central "> Valle Central </option>
+            <option value=" Virginio Gomez "> Virginio Gomez </option>
+        </select>
+
+        <label for="ocupacion">Ocupación:</label>
+        <select id="ocupacion">
+            <option value="">Seleccione...</option>
+            <option value="Sector Salud">Sector Salud</option>
+            <option value="Sector Educación">Sector Educación</option>
+            <option value="Sector Construcción e Ingeniería">Sector Construcción e Ingeniería</option>
+            <option value="Sector Tecnología y Comunicación">Sector Tecnología y Comunicación</option>
+            <option value="Sector Administración y Finanzas">Sector Administración y Finanzas</option>
+            <option value="Sector Comercial y Ventas">Sector Comercial y Ventas</option>
+            <option value="Sector Turismo y Gastronomía">Sector Turismo y Gastronomía</option>
+            <option value="Sector Transporte y Logística">Sector Transporte y Logística</option>
+            <option value="Sector Arte y Entretenimiento">Sector Arte y Entretenimiento</option>
+            <option value="Sector Agricultura y Agroindustria">Sector Agricultura y Agroindustria</option>
+            <option value="Sector Derecho y Justicia">Sector Derecho y Justicia</option>
+            <option value="Sector Seguridad y Defensa">Sector Seguridad y Defensa</option>
+            <option value="Sector Energía y Medio Ambiente">Sector Energía y Medio Ambiente</option>
+            <option value="Sector Ciencia e Investigación">Sector Ciencia e Investigación</option>
+            <option value="Sector Servicios">Sector Servicios</option>
+            <option value="Sector Servicios del hogar">Sector Servicios del hogar</option>
+            <option value="Independiente">Independiente</option>
+        </select>
+
+        <label for="puebloOriginario">¿Pertenece a un pueblo originario?</label>
+        <select id="puebloOriginario">
+            <option value="">Seleccione...</option>
+            <option value="Si">Sí</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="evento">¿En que evento te gustaria participar?:</label>
+        <select id="evento">
+            <option value="">Seleccione...</option>
+            <option value="Americup">Americup</option>
+            <option value="Copa Mundial Sub-20 de la FIFA Chile 2025™">Copa Mundial Sub-20 de la FIFA Chile 2025™ </option>
+            <option value="Mundial de Ciclismo">Mundial de Ciclismo</option>
+            <option value="Parapanmamericanos Jr.">Parapanmamericanos Jr.</option>
+        </select>
+
+        <label for="disponibilidad">Disponibilidad:</label>
+        <select id="disponibilidad">
+            <option value="">Seleccione...</option>
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noche">Noche</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('fechaNacimiento').addEventListener('change', function() {
+            const birthDate = new Date(this.value);
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            document.getElementById('edad').value = age > 0 && age < 100 ? age : '';
+        });
+
+        document.getElementById('tipoDocumento').addEventListener('change', function() {
+            const docInput = document.getElementById('numeroDocumento');
+            if (this.value === "RUT") {
+                docInput.placeholder = "Ej: 12.345.678-9";
+                docInput.pattern = "\\d{1,2}\\.\\d{3}\\.\\d{3}-[0-9kK]";
+            } else {
+                docInput.placeholder = "Ingrese su número de documento";
+                docInput.pattern = ".{5,20}";
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const regionesComunas = {
+                "01": ["Iquique", "Alto Hospicio", "Pozo Almonte", "Camiña", "Colchane", "Huara", "Pica"],
+                "02": ["Antofagasta", "Mejillones", "Sierra Gorda", "Taltal", "Calama", "Ollagüe", "San Pedro de Atacama", "Tocopilla", "María Elena"]
+            };
+
+            const residenciaSelect = document.getElementById("residencia");
+            const regionLabel = document.querySelector("label[for='region']");
+            const regionSelect = document.getElementById("region");
+            const comunaLabel = document.querySelector("label[for='comuna']");
+            const comunaSelect = document.getElementById("comuna");
+            const discapacidadSelect = document.getElementById("discapacidad");
+            const tipoDiscapacidadLabel = document.querySelector("label[for='tipodiscapacidad']");
+            const tipoDiscapacidadSelect = document.getElementById("tipodiscapacidad");
+            const nivelEstudioSelect = document.getElementById("nivelEstudio");
+            const universidadLabel = document.querySelector("label[for='universidad']");
+            const universidadSelect = document.getElementById("universidad");
+
+            function toggleRegionComuna() {
+                if (residenciaSelect.value === "CL") {
+                    regionLabel.classList.remove("hidden");
+                    regionSelect.classList.remove("hidden");
+                    comunaLabel.classList.remove("hidden");
+                    comunaSelect.classList.remove("hidden");
+                } else {
+                    regionLabel.classList.add("hidden");
+                    regionSelect.classList.add("hidden");
+                    comunaLabel.classList.add("hidden");
+                    comunaSelect.classList.add("hidden");
+                }
+            }
+
+            function toggleDiscapacidad() {
+                if (discapacidadSelect.value === "Si") {
+                    tipoDiscapacidadLabel.classList.remove("hidden");
+                    tipoDiscapacidadSelect.classList.remove("hidden");
+                } else {
+                    tipoDiscapacidadLabel.classList.add("hidden");
+                    tipoDiscapacidadSelect.classList.add("hidden");
+                }
+            }
+
+            function toggleUniversidad() {
+                const nivelesRequierenUniversidad = ["Técnico profesional", "Técnico profesional incompleto", "Universitaria", "Universitaria Incompleto", "Master/Doctorado"];
+                if (nivelesRequierenUniversidad.includes(nivelEstudioSelect.value)) {
+                    universidadLabel.classList.remove("hidden");
+                    universidadSelect.classList.remove("hidden");
+                } else {
+                    universidadLabel.classList.add("hidden");
+                    universidadSelect.classList.add("hidden");
+                }
+            }
+
+            function actualizarComunas() {
+                const regionSeleccionada = regionSelect.value;
+                comunaSelect.innerHTML = "<option value=''>Seleccione...</option>";
+                if (regionesComunas[regionSeleccionada]) {
+                    regionesComunas[regionSeleccionada].forEach(comuna => {
+                        const option = document.createElement("option");
+                        option.value = comuna;
+                        option.textContent = comuna;
+                        comunaSelect.appendChild(option);
+                    });
+                }
+            }
+
+            residenciaSelect.addEventListener("change", toggleRegionComuna);
+            discapacidadSelect.addEventListener("change", toggleDiscapacidad);
+            nivelEstudioSelect.addEventListener("change", toggleUniversidad);
+            regionSelect.addEventListener("change", actualizarComunas);
+            
+            toggleRegionComuna();
+            toggleDiscapacidad();
+            toggleUniversidad();
+        });
+    </script>
+</body>
+</html>
