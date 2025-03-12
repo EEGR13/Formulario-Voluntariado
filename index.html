@@ -1059,6 +1059,48 @@
             toggleDiscapacidad();
             toggleUniversidad();
         });
+
+
+
+document.getElementById("volunteerForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe normalmente
+
+    const formData = {
+        nombres: document.getElementById("nombres").value,
+        apellidos: document.getElementById("apellidos").value,
+        correo: document.getElementById("correo").value,
+        telefono: document.getElementById("telefono").value,
+        fechaNacimiento: document.getElementById("fechaNacimiento").value,
+        edad: document.getElementById("edad").value,
+        nacionalidad: document.getElementById("nacionalidad").value,
+        residencia: document.getElementById("residencia").value,
+        tipoDocumento: document.getElementById("tipoDocumento").value,
+        numeroDocumento: document.getElementById("numeroDocumento").value,
+        genero: document.getElementById("genero").value,
+        idiomanativo: document.getElementById("idiomanativo").value,
+        segundoidioma: document.getElementById("segundoidioma").value,
+        nivelsegundoidioma: document.getElementById("nivelsegundoidioma").value,
+        polera: document.getElementById("polera").value,
+        pantalon: document.getElementById("pantalon").value,
+        experiencia: document.getElementById("experiencia").value,
+        discapacidad: document.getElementById("discapacidad").value,
+        nivelEstudio: document.getElementById("nivelEstudio").value,
+        ocupacion: document.getElementById("ocupacion").value,
+        evento: document.getElementById("evento").value,
+        disponibilidad: document.getElementById("disponibilidad").value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbyzHhiHQZz6YQJRWqHo3wG90i4mifYF09pGbtKd1n3ya0X2tE-vHAu8WJ4rC5X4l-uyBw/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(() => alert("Formulario enviado correctamente."))
+    .catch(error => console.error("Error al enviar:", error));
+});
     </script>
 </body>
 </html>
